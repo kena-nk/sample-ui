@@ -46,5 +46,10 @@ module.exports = {
 
     // for文の中だけ++を許可する
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+
+    // devDependenciesで宣言されていない外部モジュールのインポートを禁止importを禁止しない
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+    }],
   },
 };
