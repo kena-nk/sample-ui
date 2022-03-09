@@ -1,8 +1,8 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { Story, Meta } from '@storybook/react';
-import { SkeletonAvatar } from '../../components/Skeleton';
-import type { SkeletonAvatarProps } from '../../components/Skeleton';
-import theme from '../../theme';
+import { SkeletonAvatar } from '../../src/pages/components/Skeleton';
+import type { SkeletonAvatarProps } from '../../src/pages/components/Skeleton';
+import theme from '../../src/pages/theme';
 
 export default {
   component: SkeletonAvatar,
