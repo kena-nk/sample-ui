@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
 
-export type MySkeletonProps = {
+export type CustomSkeletonProps = {
   variant: 'text' | 'circular' | 'rectangular';
   w?: string;
   h?: string;
@@ -39,8 +39,8 @@ const waveKeyframe = keyframes`
 const AnimationPulse = (fadeDuration: number) => `${pulseKeyframe} ${fadeDuration}s linear 0.5s infinite`;
 const AnimationWave = (fadeDuration: number) => `${waveKeyframe} ${fadeDuration}s linear 0.5s infinite`;
 
-type CustomSkeleton = Omit<MySkeletonProps, 'variant'>
-const ExampleSkeleton: FC<CustomSkeleton> = ({
+type BaseCustomSkeletonType = Omit<CustomSkeletonProps, 'variant'>
+const BaseCustomSkeleton: FC<BaseCustomSkeletonType> = ({
   w = '100%',
   h = '24px',
   bg = 'gray.300',
@@ -92,12 +92,12 @@ const ExampleSkeleton: FC<CustomSkeleton> = ({
   );
 };
 
-export const MySkeleton: FC<MySkeletonProps> = ({
+export const CustomSkeleton: FC<CustomSkeletonProps> = ({
   variant, w, h, bg, radii, wave, fadeDuration, isLoaded, children,
 }) => {
   if (variant === 'text') {
     return (
-      <ExampleSkeleton
+      <BaseCustomSkeleton
         w={w}
         h={h}
         bg={bg}
@@ -107,12 +107,12 @@ export const MySkeleton: FC<MySkeletonProps> = ({
         isLoaded={isLoaded}
       >
         { children }
-      </ExampleSkeleton>
+      </BaseCustomSkeleton>
     );
   }
   if (variant === 'circular') {
     return (
-      <ExampleSkeleton
+      <BaseCustomSkeleton
         w={w || '24px'}
         h={h}
         bg={bg}
@@ -122,12 +122,12 @@ export const MySkeleton: FC<MySkeletonProps> = ({
         isLoaded={isLoaded}
       >
         { children }
-      </ExampleSkeleton>
+      </BaseCustomSkeleton>
     );
   }
   if (variant === 'rectangular') {
     return (
-      <ExampleSkeleton
+      <BaseCustomSkeleton
         w={w}
         h={h || '200px'}
         bg={bg}
@@ -137,7 +137,7 @@ export const MySkeleton: FC<MySkeletonProps> = ({
         isLoaded={isLoaded}
       >
         { children }
-      </ExampleSkeleton>
+      </BaseCustomSkeleton>
     );
   }
   return null;

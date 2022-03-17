@@ -1,2 +1,2 @@
-export { MySkeleton } from './MySkeleton';
-export type { MySkeletonProps } from './MySkeleton';
+export { CustomSkeleton } from './CustomSkeleton';
+export type { CustomSkeletonProps } from './CustomSkeleton';
