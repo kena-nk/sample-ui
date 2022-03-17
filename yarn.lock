@@ -2037,7 +2037,7 @@
 
 "@next/env@12.1.0":
   version "12.1.0"
-  resolved "https://registry.npmjs.org/@next/env/-/env-12.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.0.tgz#73713399399b34aa5a01771fb73272b55b22c314"
   integrity sha512-nrIgY6t17FQ9xxwH3jj0a6EOiQ/WDHUos35Hghtr+SWN/ntHIQ7UpuvSi0vaLzZVHQWaDupKI+liO5vANcDeTQ==
 
 "@next/eslint-plugin-next@12.1.0":
@@ -2059,7 +2059,7 @@
 
 "@next/swc-darwin-x64@12.1.0":
   version "12.1.0"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.0.tgz#fcd684497a76e8feaca88db3c394480ff0b007cd"
   integrity sha512-ieAz0/J0PhmbZBB8+EA/JGdhRHBogF8BWaeqR7hwveb6SYEIJaDNQy0I+ZN8gF8hLj63bEDxJAs/cEhdnTq+ug==
 
 "@next/swc-linux-arm-gnueabihf@12.1.0":
@@ -8128,7 +8128,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
 
 next@12.1.0:
   version "12.1.0"
-  resolved "https://registry.npmjs.org/next/-/next-12.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/next/-/next-12.1.0.tgz#c33d753b644be92fc58e06e5a214f143da61dd5d"
   integrity sha512-s885kWvnIlxsUFHq9UGyIyLiuD0G3BUC/xrH0CEnH5lHEWkwQcHOORgbDF0hbrW9vr/7am4ETfX4A7M6DjrE7Q==
   dependencies:
     "@next/env" "12.1.0"

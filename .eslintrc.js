@@ -51,5 +51,8 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: true,
     }],
+
+    // defaultPropsは非推奨になっているためオプショナルな型定義を許可する
+    'react/require-default-props': 'off',
   },
 };
